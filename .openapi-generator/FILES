@@ -1,0 +1,17 @@
+.gitignore
+.openapi-generator-ignore
+api.ts
+api/apis.ts
+git_push.sh
+model/badRequestError400Response.ts
+model/badRequestError400ResponseError.ts
+model/baseError.ts
+model/forbiddenError403Response.ts
+model/forbiddenError403ResponseError.ts
+model/internalServerError500Response.ts
+model/internalServerError500ResponseError.ts
+model/models.ts
+model/unauthorizedError401Response.ts
+model/unauthorizedError401ResponseError.ts
+package.json
+tsconfig.json
