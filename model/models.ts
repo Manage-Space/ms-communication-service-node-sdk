@@ -3,6 +3,9 @@ import localVarRequest from 'request';
 export * from './badRequestError400Response';
 export * from './badRequestError400ResponseError';
 export * from './baseError';
+export * from './communicationResponseDto';
+export * from './createCommunication201Response';
+export * from './createCommunicationRequest';
 export * from './forbiddenError403Response';
 export * from './forbiddenError403ResponseError';
 export * from './internalServerError500Response';
@@ -26,6 +29,9 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 import { BadRequestError400Response } from './badRequestError400Response';
 import { BadRequestError400ResponseError } from './badRequestError400ResponseError';
 import { BaseError } from './baseError';
+import { CommunicationResponseDto } from './communicationResponseDto';
+import { CreateCommunication201Response } from './createCommunication201Response';
+import { CreateCommunicationRequest } from './createCommunicationRequest';
 import { ForbiddenError403Response } from './forbiddenError403Response';
 import { ForbiddenError403ResponseError } from './forbiddenError403ResponseError';
 import { InternalServerError500Response } from './internalServerError500Response';
@@ -46,12 +52,17 @@ let primitives = [
                  ];
 
 let enumsMap: {[index: string]: any} = {
+        "CreateCommunicationRequest.CommunicationMethodEnum": CreateCommunicationRequest.CommunicationMethodEnum,
+        "CreateCommunicationRequest.CommunicationTypeEnum": CreateCommunicationRequest.CommunicationTypeEnum,
 }
 
 let typeMap: {[index: string]: any} = {
     "BadRequestError400Response": BadRequestError400Response,
     "BadRequestError400ResponseError": BadRequestError400ResponseError,
     "BaseError": BaseError,
+    "CommunicationResponseDto": CommunicationResponseDto,
+    "CreateCommunication201Response": CreateCommunication201Response,
+    "CreateCommunicationRequest": CreateCommunicationRequest,
     "ForbiddenError403Response": ForbiddenError403Response,
     "ForbiddenError403ResponseError": ForbiddenError403ResponseError,
     "InternalServerError500Response": InternalServerError500Response,

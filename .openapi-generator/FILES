@@ -1,10 +1,14 @@
 .gitignore
 api.ts
 api/apis.ts
+api/defaultApi.ts
 git_push.sh
 model/badRequestError400Response.ts
 model/badRequestError400ResponseError.ts
 model/baseError.ts
+model/communicationResponseDto.ts
+model/createCommunication201Response.ts
+model/createCommunicationRequest.ts
 model/forbiddenError403Response.ts
 model/forbiddenError403ResponseError.ts
 model/internalServerError500Response.ts
