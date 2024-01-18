@@ -44,6 +44,10 @@ export class CommunicationResponseDto {
 export namespace CommunicationResponseDto {
     export enum CommunicationTypeEnum {
         MoveOutConfirmation = <any> 'moveOutConfirmation',
-        ReservationConfirmation = <any> 'reservationConfirmation'
+        ReservationConfirmation = <any> 'reservationConfirmation',
+        DelinquencyLate = <any> 'delinquencyLate',
+        DelinquencyOverlocked = <any> 'delinquencyOverlocked',
+        DelinquencyLien = <any> 'delinquencyLien',
+        DelinquencyAuction = <any> 'delinquencyAuction'
     }
 }
