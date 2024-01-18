@@ -52,6 +52,7 @@ let primitives = [
                  ];
 
 let enumsMap: {[index: string]: any} = {
+        "CommunicationResponseDto.CommunicationTypeEnum": CommunicationResponseDto.CommunicationTypeEnum,
         "CreateCommunicationRequest.CommunicationMethodEnum": CreateCommunicationRequest.CommunicationMethodEnum,
         "CreateCommunicationRequest.CommunicationTypeEnum": CreateCommunicationRequest.CommunicationTypeEnum,
 }

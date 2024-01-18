@@ -34,7 +34,7 @@ export class CreateCommunicationRequest {
     */
     'workflowId'?: string;
     /**
-    * Role.
+    * The email/number to send the communication to.
     */
     'recipient'?: string;
     /**

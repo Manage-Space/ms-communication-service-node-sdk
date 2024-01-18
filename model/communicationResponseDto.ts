@@ -17,6 +17,10 @@ export class CommunicationResponseDto {
     * Communication id
     */
     'communicationId': string;
+    /**
+    * Communication type.
+    */
+    'communicationType': CommunicationResponseDto.CommunicationTypeEnum;
 
     static discriminator: string | undefined = undefined;
 
@@ -25,6 +29,11 @@ export class CommunicationResponseDto {
             "name": "communicationId",
             "baseName": "communicationId",
             "type": "string"
+        },
+        {
+            "name": "communicationType",
+            "baseName": "communicationType",
+            "type": "CommunicationResponseDto.CommunicationTypeEnum"
         }    ];
 
     static getAttributeTypeMap() {
@@ -32,3 +41,9 @@ export class CommunicationResponseDto {
     }
 }
 
+export namespace CommunicationResponseDto {
+    export enum CommunicationTypeEnum {
+        MoveOutConfirmation = <any> 'moveOutConfirmation',
+        ReservationConfirmation = <any> 'reservationConfirmation'
+    }
+}
